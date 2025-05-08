@@ -16,9 +16,9 @@ on:
   #   types: [opened, reopened, synchronize]
 
 permissions:
-  contents: read
-  pull-requests: write
+  contents: write
   issues: write
+  pull-requests: write
 
 jobs:
   update_release_draft:
