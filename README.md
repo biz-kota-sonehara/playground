@@ -13,3 +13,7 @@ feature2
 # bug
 
 bug
+
+# bug2
+
+bug2
