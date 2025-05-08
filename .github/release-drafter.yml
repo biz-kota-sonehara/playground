@@ -50,6 +50,7 @@ autolabeler:
   - label: "skip-changelog"
     branch:
       - "/main/"
+      - "/hotfix/"
       - "/pre-production/"
       - "/production/"
 exclude-labels:
