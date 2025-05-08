@@ -53,4 +53,3 @@ template: |
   ## Changes
   $CHANGES
 include-pre-releases: true
-commitish: refs/heads/production
