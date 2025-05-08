@@ -25,3 +25,7 @@ bug3
 # feature3
 
 feature3
+
+# chore
+
+chore
