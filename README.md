@@ -21,3 +21,7 @@ bug2
 # bug3
 
 bug3
+
+# feature3
+
+feature3
