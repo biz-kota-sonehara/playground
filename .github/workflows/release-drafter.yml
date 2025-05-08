@@ -36,3 +36,6 @@ jobs:
         #   disable-autolabeler: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          prerelease: ${{ github.event_name == 'push' && github.ref == 'refs/heads/pre-production' }}
+          prerelease-identifier: alpha
