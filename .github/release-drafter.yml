@@ -49,6 +49,7 @@ autolabeler:
       - '/feature\/.+/'
   - label: "skip-changelog"
     branch:
+      - "/main/"
       - "/pre-production/"
       - "/production/"
 exclude-labels:
