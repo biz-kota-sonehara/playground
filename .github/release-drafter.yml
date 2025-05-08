@@ -47,6 +47,10 @@ autolabeler:
   - label: "enhancement"
     branch:
       - '/feature\/.+/'
+  - label: "skip-changelog"
+    branch:
+      - "/pre-production/"
+      - "/production/"
 exclude-labels:
   - "skip-changelog"
 template: |
