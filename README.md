@@ -37,3 +37,7 @@ feature4
 # feature5
 
 feature5
+
+# bug4
+
+bug4
