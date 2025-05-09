@@ -1,0 +1,23 @@
+name: Release Drafter - Labeling
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+run-name: ${{ format('labeling to \#{0}', github.event.pull_request.number)  }}
+
+jobs:
+  update_release_draft:
+    runs-on: ubuntu-latest
+    permissions:
+      # リリースを作成するために必要
+      contents: write
+      # プルリクエストにラベルをつけるために必要
+      pull-requests: write
+    steps:
+      - uses: release-drafter/release-drafter@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # PUSHイベントのときにリリースを作成する
+          disable-releaser: true
