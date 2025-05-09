@@ -1,19 +1,13 @@
-references:
-  - main
 name-template: "v$RESOLVED_VERSION"
 tag-template: "v$RESOLVED_VERSION"
 categories:
-  - title: "💣 Breaking changes"
-    label: "breaking"
   - title: "🚀 Features"
     label: "enhancement"
   - title: "🐛 Bug Fixes"
     label: "bug"
   - title: "🧰 Maintenance"
     label: "chore"
-  - title: "🗒 Documentation"
-    label: "documentation"
-  - title: "🚀 Dependencies"
+  - title: "📦 Dependencies"
     label: "dependencies"
 change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
@@ -28,17 +22,11 @@ version-resolver:
   default: patch
 autolabeler:
   - label: "chore"
-    files:
-      - "*.md"
     branch:
-      - '/docs{0,1}\/.+/'
-      - "/chore/.+/"
+      - '/chore\/.+/'
   - label: "bug"
     branch:
       - '/bugfix\/.+/'
-      - '/bug\/.+/'
-    title:
-      - "/fix/i"
   - label: "enhancement"
     branch:
       - '/feature\/.+/'
@@ -47,6 +35,7 @@ autolabeler:
       - "/main/"
       - "/pre-production/"
       - "/production/"
+      - "/hotfix\/.+/"
 exclude-labels:
   - "skip-changelog"
 template: |
