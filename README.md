@@ -49,3 +49,7 @@ feature6
 # chore
 
 chore
+
+# hotfix
+
+hotfix
