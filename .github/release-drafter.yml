@@ -25,11 +25,6 @@ version-resolver:
     labels:
       - "minor"
       - "enhancement"
-  patch:
-    labels:
-      - "patch"
-      - "dependencies"
-      - "bug"
   default: patch
 autolabeler:
   - label: "chore"
