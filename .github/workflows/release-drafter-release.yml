@@ -1,4 +1,4 @@
-name: Release Drafter
+name: Release Drafter - Generate Release Notes
 
 on:
   push:
@@ -6,8 +6,7 @@ on:
       - pre-production
       - production
 
-  pull_request:
-    types: [opened, reopened, synchronize]
+run-name: ${{ format('Generate Release Notes \${0}', github.sha) }}
 
 jobs:
   update_release_draft:
@@ -23,11 +22,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           # 検証用リリースの設定
-          prerelease: ${{ github.event_name == 'push' && github.ref == 'refs/heads/pre-production' }}
+          prerelease: ${{ github.ref == 'refs/heads/pre-production' }}
           prerelease-identifier: alpha
           # 本番リリースの設定
-          publish: ${{ github.event_name == 'push' && github.ref == 'refs/heads/production' }}
-          # PUSHイベントのときにリリースを作成する
-          disable-releaser: ${{ github.event_name != 'push' }}
+          publish: ${{ github.ref == 'refs/heads/production' }}
           # プルリクエストイベントのときにラベル設定を行う
-          disable-autolabeler: ${{ github.event_name != 'pull_request' }}
+          disable-autolabeler: true

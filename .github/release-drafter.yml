@@ -35,7 +35,6 @@ autolabeler:
       - "/main/"
       - "/pre-production/"
       - "/production/"
-      - "/hotfix\/.+/"
 exclude-labels:
   - "skip-changelog"
 template: |
