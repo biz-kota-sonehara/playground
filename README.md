@@ -41,3 +41,7 @@ feature5
 # bug4
 
 bug4
+
+# feature6
+
+feature6
