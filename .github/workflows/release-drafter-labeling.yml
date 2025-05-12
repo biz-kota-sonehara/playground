@@ -1,4 +1,4 @@
-name: Release Drafter - Labeling
+name: Release Drafter - PR Labeling
 
 on:
   pull_request:
