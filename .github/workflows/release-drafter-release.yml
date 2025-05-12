@@ -6,7 +6,7 @@ on:
       - pre-production
       - production
 
-run-name: ${{ format('Generate Release Notes \${0}', github.sha) }}
+run-name: ${{ format('Generate Release Notes {0}', github.sha) }}
 
 jobs:
   update_release_draft:

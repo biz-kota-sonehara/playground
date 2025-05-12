@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [opened, reopened, synchronize]
 
-run-name: ${{ format('labeling to \#{0}', github.event.pull_request.number)  }}
+run-name: ${{ format('labeling to {0}', github.event.pull_request.number)  }}
 
 jobs:
   update_release_draft:
