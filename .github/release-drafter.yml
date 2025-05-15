@@ -45,4 +45,5 @@ exclude-labels:
 template: |
   ## Changes
   $CHANGES
-include-pre-releases: true
+include-pre-releases: false
+filter-by-commitish: true
