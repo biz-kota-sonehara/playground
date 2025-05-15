@@ -28,3 +28,4 @@ jobs:
           publish: false
           # プルリクエストイベントのときにラベル設定を行う
           disable-autolabeler: true
+          commitish: "refs/heads/production"
