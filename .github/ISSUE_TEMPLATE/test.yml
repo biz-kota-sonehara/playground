@@ -1,0 +1,40 @@
+name: リリース対象動作確認
+about: リリース対象動作確認のためのテンプレート
+title: "yyyy/mm/ddリリース対象の動作確認を実施する"
+type: Task
+
+body:
+  - type: textarea
+    id: test_target
+    attributes:
+      label: テスト対象
+      description: テストが必要なものを記載してください
+      value: |
+        ### テスト対象
+
+        - [ ] bizreach-inc/cwr#
+        - [ ] bizreach-inc/cwr#
+        - [ ] bizreach-inc/cwr#
+
+  - type: textarea
+    id: ignore_target
+    attributes:
+      label: テスト不要
+      description: テストが不要なものを記載してください
+      value: |
+        ### テスト不要
+
+        - bizreach-inc/cwr#
+        - bizreach-inc/cwr#
+        - bizreach-inc/cwr#
+  - type: textarea
+    id: project_task
+    attributes:
+      label: プロジェクトタスク
+      description: プロジェクトタスクを記載してください
+      value: |
+        ### プロジェクトタスク
+
+        - bizreach-inc/cwr#
+        - bizreach-inc/cwr#
+        - bizreach-inc/cwr#
