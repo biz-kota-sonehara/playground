@@ -6,9 +6,17 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### 概要
+        ### 説明
 
         リリース対象の動作確認を実施するためのテンプレートです。
+
+        テスト対象は以下の基準で判断してください。
+        - ユーザーに影響があるもの
+          - 表示内容
+          - 表示条件
+          - 表示タイミング
+
+        プロジェクト内のタスクはリリースに向けてテストを行うためテストは不要です
 
   - type: textarea
     id: test_target
@@ -16,8 +24,6 @@ body:
       label: テスト対象
       description: テストが必要なものを記載してください
       value: |
-        ### テスト対象
-
         - [ ] bizreach-inc/cwr#
         - [ ] bizreach-inc/cwr#
         - [ ] bizreach-inc/cwr#
@@ -28,8 +34,6 @@ body:
       label: テスト不要
       description: テストが不要なものを記載してください
       value: |
-        ### テスト不要
-
         - bizreach-inc/cwr#
         - bizreach-inc/cwr#
         - bizreach-inc/cwr#
@@ -40,8 +44,6 @@ body:
       label: プロジェクトタスク
       description: プロジェクトタスクを記載してください
       value: |
-        ### プロジェクトタスク
-
         - bizreach-inc/cwr#
         - bizreach-inc/cwr#
         - bizreach-inc/cwr#
