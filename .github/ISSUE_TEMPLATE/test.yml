@@ -3,6 +3,13 @@ description: リリース対象動作確認のためのテンプレート
 title: "yyyy/mm/ddリリース対象の動作確認を実施する"
 
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 概要
+
+        リリース対象の動作確認を実施するためのテンプレートです。
+
   - type: textarea
     id: test_target
     attributes:
@@ -26,6 +33,7 @@ body:
         - bizreach-inc/cwr#
         - bizreach-inc/cwr#
         - bizreach-inc/cwr#
+
   - type: textarea
     id: project_task
     attributes:
