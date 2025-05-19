@@ -1,7 +1,6 @@
 name: リリース対象動作確認
-about: リリース対象動作確認のためのテンプレート
+description: リリース対象動作確認のためのテンプレート
 title: "yyyy/mm/ddリリース対象の動作確認を実施する"
-type: Task
 
 body:
   - type: textarea
